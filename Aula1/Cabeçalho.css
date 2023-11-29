@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DINPro-Regular', sans-serif;
+  }
+  
+  header {
+    background-color: #b3e0cc; /* Cor verde clara */
+    padding: 10px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 100px; /* Tamanho do logo baseado em práticas recomendadas */
+  }
+  
+  .system-name,
+  .operator-name {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .system-name {
+    flex-grow: 1;
+    font-size: 4vw; /* Tamanho proporcional à tela usando unidades 'vw' */
+  }
+  
+  .operator-name {
+    font-size: 2vw; /* Tamanho proporcional à tela usando unidades 'vw' */
+  }
+  

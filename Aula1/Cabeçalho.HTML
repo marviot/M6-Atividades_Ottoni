@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Cabeçalho.css">
+  <title>Minha Aplicação React</title>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="cabec"></div>
+
+  <script type="text/babel">
+    const Cabec = document.getElementById('cabec');
+    ReactDOM.render(<App />, Cabec);
+
+    function App() {
+      return (
+        <header>
+          <div className="container">
+            <img className="logo" src="imagem.png" alt="Logo da Empresa" />
+            <h1 className="system-name">Nome do Sistema</h1>
+            <p className="operator-name">Nome do Operador</p>
+          </div>
+        </header>
+      );
+    }
+  </script>
+</body>
+</html>
